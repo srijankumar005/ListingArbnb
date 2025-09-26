@@ -55,6 +55,11 @@ app.post("/listings", async (req, res) => {
     res.redirect("/listings");
 });
 
+
+app.get("/test", (req,res) => {
+    res.send("Hii, I am testing");
+});
+
 //Edit Route
 app.get("/listings/:id/edit", async(req,res) => {
      let { id } = req.params;
